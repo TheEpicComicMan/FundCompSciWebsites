@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+	<title></title>
+	<head>
+		<!-- Anthony Migyanka -->
+		<style>
+		</style>
+	</head>
+	<body>
+		<center>
+			<br>
+			<hr>
+			<br>
+			<a href="index.html" style="text-align:center">HOME</a>
+		</center>
+	</body>
+</html>
