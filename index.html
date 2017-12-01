@@ -30,6 +30,15 @@
 				width:100%; 
 				height:auto;
 			}
+			.css-serial {
+  				counter-reset: serial-number;  /* Set the serial number counter to 0 */
+			}
+
+			.css-serial td:first-child:before {
+  				counter-increment: serial-number;  /* Increment the serial number counter */
+  				content: counter(serial-number);  /* Display the counter */
+			}
+
 		</style>
 		<title>FCSHP</title>
 		<meta charset="utf-8">
@@ -63,7 +72,7 @@
 				<h3 style="text-align: center"><a href="#bottom" class="use">To The Bottom</a></h3>
 				<br>
 				<br>
-				<table class="table table-striped mx-auto table table-hover">
+				<table class="table table-striped mx-auto table table-hover css-serial">
 					<thead>
 						<tr>
 							<th style="text-align: center">#</th>
@@ -75,77 +84,88 @@
 					</thead>
 					<tbody>
 						<tr class="bg-info">
-							<th  style="text-align: center">--</th>
+							<!--intentionally left blank-->
+							<td></td>
 							<td>--------</td>
 							<td>Scratch</td>
 							<td>--------</td>
 							<td>--------</td>
 						</tr>
 						<tr>
-							<th  style="text-align: center">1</th>
+							<!--intentionally left blank-->
+							<td></td>
 							<td>08.23.17</td>
 							<td>Rope Joke</td>
 							<td><a href="https://scratch.mit.edu/projects/171955563/" style="color:black" class="use">LINK</a></td>
 							<td>--------</td>
 						</tr>
 						<tr>
-							<th  style="text-align: center">2</th>
+							<!--intentionally left blank-->
+							<td></td>
 							<td>08.25.17</td>
 							<td>Advanced Lab</td>
 							<td><a href="https://scratch.mit.edu/projects/172180598/" style="color:black" class="use">LINK</a></td>
 							<td>--------</td>
 						</tr>
 						<tr>
-							<th  style="text-align: center">3</th>
+							<!--intentionally left blank-->
+							<td></td>
 							<td>08.28.17</td>
 							<td>Beginner Lab</td>
 							<td><a href="https://scratch.mit.edu/projects/172404240/" style="color:black" class="use">LINK</a></td>
 							<td>--------</td>
 						</tr>
 						<tr>
-							<th  style="text-align: center">4</th>
+							<!--intentionally left blank-->
+							<td></td>
 							<td>08.28.17</td>
 							<td>Intermediate Lab</td>
 							<td><a href="https://scratch.mit.edu/projects/172406616/" style="color:black" class="use">LINK</a></td>
 							<td>--------</td>
 						</tr>
 						<tr>
-							<th  style="text-align: center">5</th>
+							<!--intentionally left blank-->
+							<td></td>
 							<td>08.31.17</td>
 							<td>Beginner Lab</td>
 							<td><a href="https://scratch.mit.edu/projects/172786037/" style="color:black" class="use">LINK</a></td>
 							<td>--------</td>
 						</tr>
 						<tr>
-							<th  style="text-align: center">6</th>
+							<!--intentionally left blank-->
+							<td></td>
 							<td>08.31.17</td>
 							<td>Medium Lab</td>
 							<td><a href="https://scratch.mit.edu/projects/172789606/" style="color:black" class="use">LINK</a></td>
 							<td>--------</td>
 						</tr>
 						<tr>
-							<th  style="text-align: center">7</th>
+							<!--intentionally left blank-->
+							<td></td>
 							<td>09.01.17</td>
 							<td>Advanced Lab</td>
 							<td><a href="https://scratch.mit.edu/projects/172912284/" style="color:black" class="use">LINK</a></td>
 							<td>--------</td>
 						</tr>
 						<tr>
-							<th  style="text-align: center">8</th>
+							<!--intentionally left blank-->
+							<td></td>
 							<td>09.05.17</td>
 							<td>Super Advanced Lab</td>
 							<td><a href="https://scratch.mit.edu/projects/173263782/" style="color:black" class="use">LINK</a></td>
 							<td>--------</td>
 						</tr>
 						<tr>
-							<th  style="text-align: center">9</th>
+							<!--intentionally left blank-->
+							<td></td>
 							<td>09.07.17</td>
 							<td>Advanced Lab</td>
 							<td><a href="https://scratch.mit.edu/projects/173574899/" style="color:black" class="use">LINK</a></td>
 							<td>--------</td>
 						</tr>
 						<tr>
-							<th  style="text-align: center">10</th>
+							<!--intentionally left blank-->
+							<td></td>
 							<td>09.07.17</td>
 							<td>Beginner Lab</td>
 							<td><a href="https://scratch.mit.edu/projects/173573789/" style="color:black" class="use">LINK</a></td>
@@ -153,154 +173,176 @@
 						</tr>
 
 						<tr>
-							<th  style="text-align: center">11</th>
+							<!--intentionally left blank-->
+							<td></td>
 							<td>09.07.17</td>
 							<td>Meium Lab</td>
 							<td><a href="https://scratch.mit.edu/projects/173571202/" style="color:black" class="use">LINK</a></td>
 							<td>--------</td>
 						</tr>
 						<tr>
-							<th  style="text-align: center">12</th>
+							<!--intentionally left blank-->
+							<td></td>
 							<td>09.11.17</td>
 							<td>Video Game</td>
 							<td><a href="https://scratch.mit.edu/projects/174028390/" style="color:black" class="use">LINK</a></td>
 							<td>--------</td>
 						</tr>
 						<tr>
-							<th  style="text-align: center">13</th>
+							<!--intentionally left blank-->
+							<td></td>
 							<td>09.13.17</td>
 							<td>Challenge 1</td>
 							<td><a href="https://scratch.mit.edu/projects/174391215/" style="color:black" class="use">LINK</a></td>
 							<td>--------</td>
 						</tr>
 						<tr>
-							<th  style="text-align: center">14</th>
+							<!--intentionally left blank-->
+							<td></td>
 							<td>09.14.17</td>
 							<td>Challenge 2</td>
 							<td><a href="https://scratch.mit.edu/projects/174588698/" style="color:black" class="use">LINK</a></td>
 							<td>--------</td>
 						</tr>
 						<tr>
-							<th  style="text-align: center">15</th>
+							<!--intentionally left blank-->
+							<td></td>
 							<td>09.14.17</td>
 							<td>Mode</td>
 							<td><a href="https://scratch.mit.edu/projects/174594860/" style="color:black" class="use">LINK</a></td>
 							<td>--------</td>
 						</tr>
 						<tr>
-							<th  style="text-align: center">16</th>
+							<!--intentionally left blank-->
+							<td></td>
 							<td>09.18.17</td>
 							<td>Beginner Lab</td>
 							<td><a href="https://scratch.mit.edu/projects/175133087/" style="color:black" class="use">LINK</a></td>
 							<td>--------</td>
 						</tr>
 						<tr>
-							<th  style="text-align: center">17</th>
+							<!--intentionally left blank-->
+							<td></td>
 							<td>10.08.17</td>
 							<td>Final Video Game</td>
 							<td><a href="https://scratch.mit.edu/projects/172786037/" style="color:black" class="use">LINK</a></td>
 							<td>--------</td>
 						</tr>
 						<tr class="bg-info">
-							<th  style="text-align: center">--</th>
+							<!--intentionally left blank-->
+							<td></td>
 							<td>--------</td>
 							<td>HTML Unit</td>
 							<td>--------</td>
 							<td>--------</td>
 						</tr>
 						<tr>
-							<th style="text-align: center">1</th>
+							<!--intentionally left blank-->
+							<td></td>
 							<td>10.19.17</td>
 							<td>Basic Site</td>
 							<td><a href="AGM802010.19.html" style="color:black" class="use">LINK</a></td>
 							<td><a href="AGM802010.19.html" style="color:black" class="use" download>Download</a></td>
 						</tr>
 						<tr>
-							<th style="text-align: center">2</th>
+							<!--intentionally left blank-->
+							<td></td>
 							<td>10.23.17</td>
 							<td>The Saturn V</td>
 							<td><a href="AGM802010.23.html" style="color:black" class="use">LINK</a></td>
 							<td><a href="AGM802010.23.html" style="color:black" class="use" download>Download</a></td>
 						</tr>
 						<tr>
-							<th style="text-align: center">3</th>
+							<!--intentionally left blank-->
+							<td></td>
 							<td>10.26.17</td>
 							<td>Colors</td>
 							<td><a href="AGM8020Color.html" style="color:black" class="use">LINK</a></td>
 							<td><a href="AGM8020Color.html" style="color:black" class="use" download>Download</a></td>
 						</tr>
 						<tr>
-							<th style="text-align: center">4</th>
+							<!--intentionally left blank-->
+							<td></td>
 							<td>10.30.17</td>
 							<td>Site 1</td>
 							<td><a href="AGM8020Site1.html" style="color:black" class="use">LINK</a></td>
 							<td><a href="AGM8020Site1.html" style="color:black" class="use" download>Download</a></td>
 						</tr>
 						<tr>
-							<th style="text-align: center">5</th>
+							<!--intentionally left blank-->
+							<td></td>
 							<td>10.30.17</td>
 							<td>Site 2</td>
 							<td><a href="AGM8020Site2" style="color:black" class="use">LINK</a></td>
 							<td><a href="AGM8020Site2.html" style="color:black" class="use" download>Download</a></td>
 						</tr>
 						<tr>
-							<th style="text-align: center">6</th>
+							<!--intentionally left blank-->
+							<td></td>
 							<td>11.1.17</td>
 							<td>TablesImagesCSS</td>
 							<td><a href="AGM8020ImagesTablesCSS.html" style="color:black" class="use">LINK</a></td>
 							<td><a href="AGM8020ImagesTablesCSS.html" style="color:black" class="use" download>Download</a></td>
 						</tr>
 						<tr>
-							<th style="text-align: center">7</th>
+							<!--intentionally left blank-->
+							<td></td>
 							<td>11.3.17</td>
 							<td>Group Project</td>
 							<td><a href="KSPGroup.html" style="color:black" class="use">LINK</a></td>
 							<td><a href="KSPGroup.html" style="color:black" class="use" download>Download</a></td>
 						</tr>
 						<tr>
-							<th  style="text-align: center">8</th>
+							<!--intentionally left blank-->
+							<td></td>
 							<td>11.7.17</td>
 							<td>Lists</td>
 							<td><a href="AGM8020Tables.html" style="color:black" class="use">LINK</a></td>
 							<td><a href="AGM8020Tables.html" style="color:black" class="use" download>Download</a></td>
 						</tr>
 						<tr>
-							<th  style="text-align: center">9</th>
+							<!--intentionally left blank-->
+							<td></td>
 							<td>11.13.17</td>
 							<td>CSS</td>
 							<td><a href="AGM8020CSS.html" style="color:black" class="use">LINK</a></td>
 							<td><a href="AGM8020CSS.html" style="color:black" class="use" download>Download</a></td>
 						</tr>
 						<tr>
-							<th  style="text-align: center">10</th>
+							<!--intentionally left blank-->
+							<td></td>
 							<td>11.15.17</td>
 							<td>Video Game</td>
 							<td><a href="AGM8020VideoGame.html" style="color:black" class="use">LINK</a></td>
 							<td><a href="AGM8020VideoGame.html" style="color:black" class="use" download>Download</a></td>
 						</tr>
 						<tr>
-							<th  style="text-align: center">11</th>
+							<!--intentionally left blank-->
+							<td></td>
 							<td>11.17.17</td>
 							<td>Final</td>
 							<td><a href="index.html" style="color:black" class="use">LINK</a></td>
 							<td><a href="index.html" style="color:black" class="use" download>Download</a></td>
 						</tr>
 						<tr class="bg-info">
-							<th  style="text-align: center">--</th>
+							<!--intentionally left blank-->
+							<td></td>
 							<td>--------</td>
 							<td>CSS Unit</td>
 							<td>--------</td>
 							<td>--------</td>
 						</tr>
 						<tr>
-							<th  style="text-align: center">12</th>
+							<!--intentionally left blank-->
+							<td></td>
 							<td>11.27.17</td>
 							<td>Padding</td>
 							<td><a href="AGM8020Padding.html" style="color:black" class="use">LINK</a></td>
 							<td><a href="AGM8020Padding.html" style="color:black" class="use" download>Download</a></td>
 						</tr>
 						<tr class="bg-success" id="current">
-							<th  style="text-align: center">13</th>
+							<!--intentionally left blank-->
+							<td></td>
 							<td>11.29.17</td>
 							<td>Width / Height</td>
 							<td><a href="AGM8020WidthHeight.html" style="color:black" class="use">LINK</a></td>
