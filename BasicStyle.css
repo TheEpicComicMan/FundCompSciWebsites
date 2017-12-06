@@ -10,3 +10,17 @@ a:link.button, a:visited.button {
 a:hover.button, a:active.button {
 	background-color: #c1c1c1;
 }
+.center{
+	text-align: center;
+}
+.dont_show{
+	display: none;
+}
+.basic_green_border_dashed{
+	background-color: #b8c1d1;
+	text-align: center;
+	border-style: dashed;
+	margin: 30px 100px 75px 100px;
+	font-size: 25px;
+	text-color: green;
+}
