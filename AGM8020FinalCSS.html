@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+	<title>Final CSS</title>
+	<head>
+		<!-- Anthony Migyanka -->
+		<style>
+			.dont_show{
+				display: none;
+			}.dont_show2{
+				visibility: hidden;
+			}
+			.inline{
+				display: inline;
+			}
+			.width{
+				height:auto;
+				max-width: 85%;
+			}
+			.width2{
+				height:auto;
+				max-width: 45%;
+			}
+			.images{
+				height: 375px;
+				background-color: #b8c1d1;
+				border-style: dashed;
+				margin: 50px 100px 75px 100px;
+				padding: 50px;
+			}
+			.img1{
+				float: right;
+				overflow: auto;
+			}
+			.img2{
+				float: left;
+				overflow: auto;
+			}
+			div.fixed {
+				position: fixed;
+				bottom: 0;
+				right: 0;
+				width: 300px;
+				border: 3px solid #73AD21;
+				background-color: #73AD21;
+				text-align: center;
+			}
+		</style>			
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+		<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+		<link rel="stylesheet" href="BasicStyle.css">
+	</head>
+	<body>
+		
+		<h1 class="center">Welcome to my Final HTMLL Project!!</h1>
+		<h1 class="dont_show">Welcome to my Final HTMLL Project!!</h1>
+		<h1 class="dont_show2">Welcome to my Final HTMLL Project!!</h1>
+		
+		<center>
+			<div class="width basic_green_border_dashed">
+				<br>
+				<p>Try changing the size of the page, see what happens.</p>
+				<br>
+			</div>
+			
+			
+			<div class="images">
+				<!-- Image 1 -->
+				<img src="https://kerbalspaceprogram.com/en/wp-content/uploads/2015/04/kerbals_1920x1080.jpg" alt="IMG 1" class="width2 img1">
+				<!-- Image 2 -->
+				<img src="https://preview.ibb.co/kYCFXw/KSPIMG1.jpg" alt="IMG 2" class="width2 img2">
+			</div>
+		</center>
+		
+		<div class="fixed">
+			<p>This &lt;div&gt; has a fixed position!</p>
+		</div>
+		
+		<!-- Ending Home Link -->
+		<center>
+			<br>
+			<hr>
+			<br>
+			<div class="inline">
+				<a href="index.html" style="text-align:center" class="button">HOME</a>
+				<a href="index.html" style="text-align:center" class="button">HOME</a>
+				<a href="index.html" style="text-align:center" class="button">HOME</a>
+				<br>
+				<br>
+			</div>
+		</center>
+	</body>
+</html>
+
+<!--
+Use the z-index property to allow text to be shown over an image with at least two different images on your page
+-->
