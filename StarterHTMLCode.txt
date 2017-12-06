@@ -15,7 +15,7 @@
 			<br>
 			<hr>
 			<br>
-			<a href="index.html" style="text-align:center">HOME</a>
+			<a href="index.html" style="text-align:center" class="button">HOME</a>
 		</center>
 	</body>
 </html>
