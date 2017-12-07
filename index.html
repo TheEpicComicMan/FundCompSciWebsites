@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 	<head>
-		<style type="text/css">
+		<style>
 			table.center {
 				margin-left:auto; 
 				margin-right:auto;
@@ -38,7 +38,12 @@
   				counter-increment: serial-number; 
   				content: counter(serial-number); 
 			}
+			.test{
+				z-index: 1;
+			}
 		</style>
+		<link rel="stylesheet" href="defaultTheme.css">
+		<script src="JS_Files/jquery.fixedheadertable.js"></script>
 		<title>FCSHP</title>
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width">
@@ -56,7 +61,7 @@
 			</button>
 			<a class="navbar-brand" href="index.html"> &nbsp;<span class="fa-stack fa-lg">
 			<i class="fa fa-terminal fa-stack-1x fa-inverse"></i>
-			</span> Fundamentals Of Computer Science Home Page&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a>
+			</span> Fundamentals Of Computer Science Home Page</a>
 		 </nav>
 		<br>
 		<br>
@@ -66,9 +71,10 @@
 				<br>
 				<br>
 				<h2 style="text-align: center">All Of My 2017-18 Fundamentals of Computer Science Projects</h2>
-				<table class="table table-striped mx-auto table table-hover css-serial">
+				<div style="max-height: 450px; overflow-x: hidden; overflow-y: scroll">
+					<table class="table table-striped mx-auto table table-hover css-serial">
 						<thead>
-							<tr>
+							<tr class="test"> 
 								<th style="text-align: center">#</th>
 								<th style="text-align: center">Date</th>
 								<th style="text-align: center">Title</th>
@@ -76,10 +82,7 @@
 								<th style="text-align: center"><i class="fa fa-download"></i>&nbsp;&nbsp;Download File</th>
 							</tr>
 						</thead>
-					</table>
-				<div style="max-height: 400px; overflow-x: hidden; overflow-y: scroll;">
-					<table class="table table-striped mx-auto table table-hover css-serial">
-						<thead>
+						<tbody>
 							<tr class="bg-info">
 								<!--intentionally left blank-->
 								<td></td>
@@ -361,7 +364,7 @@
 								<td><a href="AGM8020FinalCSS.html" style="color:black" class="use">LINK</a></td>
 								<td><a href="AGM8020FinalCSS.html" style="color:black" class="use" download>Download</a></td>
 							</tr>
-						</thead>
+						</tbody>
 					</table>
 				</div>
 				<br>
