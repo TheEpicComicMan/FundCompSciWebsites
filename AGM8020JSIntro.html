@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+	<title>JS Intro</title>
+	<head>
+		<!-- Anthony Migyanka -->
+		<style>
+			#changeImg{
+				width: 300px;
+				height: auto;
+			}
+		</style>			
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+		<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+		<link rel="stylesheet" href="Other/BasicStyle.css">
+	</head>
+	<body style="background-color: #c1c1c1">
+		<h1>Welcome to my JS intro</h1>
+		<br>
+		<center class="buttonChangeItems">
+		
+			<p id="changeTxt">Click the button below to change this text</p>
+			<br>
+			<button type="button" onclick="document.getElementById('changeTxt').innerHTML = 'See it changed!'">Try it!</button>
+			
+			<br>
+			<hr>
+			<br>
+			<!-- image one below -->
+			<img src="https://kerbalspaceprogram.com/en/wp-content/uploads/2015/04/kerbals_1920x1080.jpg" alt="img1" id="changeImg"></img>
+			<br>
+			<br>
+			<button type="button" onclick="toggleImg()">Change the image</button>
+			
+			<script>
+				 function toggleImg() { 
+					var displaySetting = changeImg.src;
+					
+					var  src1 = 'https://kerbalspaceprogram.com/en/wp-content/uploads/2015/04/kerbals_1920x1080.jpg';
+					var src2 = 'http://i0.kym-cdn.com/entries/icons/original/000/013/956/kerbal-space-program.jpg'
+					
+					if (displaySetting == src1) { 
+					  changeImg.src = src2;
+					}
+					else { 
+					  changeImg.src = src1;
+					}
+				  }  
+				  
+				  function toggleText() { 
+				 
+					console.log('being called');
+					
+					// get the current value of the clock's display property 
+					var displaySetting = hide.style.display;
+
+					// also get the clock button, so we can change what it says 
+					var txtButton = document.getElementById('txtButton');
+					
+					// now toggle the clock and the button text, depending on current state
+					if (displaySetting == 'block') { 
+					  hide.style.display = 'none';
+					  txtButton.innerHTML = 'Show text';
+					}
+					else { 
+					  hide.style.display = 'block';
+					  txtButton.innerHTML = 'Hide text';
+					}
+				  }  
+			</script>
+			
+			<br>
+			<hr>
+			<br>
+			
+			<p id="hide">Some text</p>
+			<br>
+			<button type="button" onclick="toggleText()" id="txtButton">Hide text</button>
+			
+			<br>
+			<hr>
+			<br>
+			
+			<button type="button" onclick="document.write('See, this works!')">Chick on this to use "document.write"</button>
+			
+			<br>
+			<hr>
+			<br>
+			
+			<button type="button" onclick="window.alert('See, this works!')">Chick on this to use "window.alert"</button>
+			
+			<br>
+			<hr>
+			<br>
+			
+			<button type="button" onclick="console.log('See, this works!')">Chick on this to use "console.log"</button>
+		<center>
+	<!-- Ending Home Link -->
+	<center>
+		<br>
+		<hr>
+		<br>
+		<div>
+			<a href="index.html" style="text-align:center" class="button">HOME</a>
+		</div>
+	</center>
+	</body>
+</html>
