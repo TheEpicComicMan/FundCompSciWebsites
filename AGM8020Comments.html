@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+	<title>JS Comments</title>
+	<head>
+		<!-- Anthony Migyanka -->			
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+		<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+		<link rel="stylesheet" href="Other/BasicStyle.css">
+	</head>
+	<body style="background-color: #c1c1c1">
+		<h1>Welcome to my JS Comments Page</h1>
+		<br>
+		<center>
+			
+			<br>
+			<hr>
+			<br>
+			
+			<p id="p1"></p>
+			<br>
+			<br>
+			<p id="p2"></p>
+			<br>
+			<br>
+			<p id="p3"></p>
+			<br>
+			<br>
+			<p id="p4"></p>
+			<br>
+			<br>
+			<p id="p5"></p>
+			<br>
+			<br>
+			<p id="p6"></p>
+			
+		<center>
+	<!-- Ending Home Link -->
+	<center>
+		<br>
+		<hr>
+		<br>
+		<div>
+			<a href="index.html" style="text-align:center" class="button">HOME</a>
+		</div>
+	</center>
+	<script type="text/javascript">
+				/*
+				This code sets different 
+				paragrpahs to have
+				different items displayed
+				*/
+				
+				//make a var
+				var num1 = 100 / 100;
+				var num2 = Math.sqrt(1);
+				var num3 = 4 * 2;
+				var  str1 = "This is a string";
+				var str2 = "Another string"; 
+				var str3 = "One more string";
+				
+				
+				num3 = 7;
+				
+				
+				var items = [num1, num2, num3, str1, str2, str3];
+				var s;
+				for(var i = 0; i < 6; i++){
+					s = "p" + (i+1)
+					printToPage(s, items[i]);
+				}
+				function printToPage(id, item){
+					document.getElementById(id).innerHTML = item;
+				}
+			</script>
+	</body>
+</html>
