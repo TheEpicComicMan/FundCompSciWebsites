@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html>
+	<title>JS Comments</title>
+	<head>
+		<!-- Anthony Migyanka -->			
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+		<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+		<link rel="stylesheet" href="Other/BasicStyle.css">
+	</head>
+	<body style="background-color: #c1c1c1">
+		<h1>Welcome to my JS Math Page</h1>
+		<br>
+		<center>
+			
+			<br>
+			<hr>
+			<br>
+			<button type="button" onclick="sq100();">Solve sqrt(100)</button>
+			<br>
+			<p id="p1"></p>
+			<br>
+			<br>
+			<button type="button" onclick="sin45();">Sin(45) = </button>
+			<p id="p2"></p>
+			<br>
+			<br>
+			<button type="button" onclick="cos45();">cos(45) = </button>
+			<p id="p3"></p>
+			<br>
+			<br>
+			<button type="button" onclick="tan45();">tan(45) = </button>
+			<p id="p4"></p>
+			<br>
+			<br>
+			<button type="button" onclick="a4t2();">4 * 2 = </button>
+			<p id="p5"></p>
+			<br>
+			<br>
+			<button type="button" onclick="a100o100();">100 / 100 = </button>
+			<p id="p6"></p>
+			<br>
+			<br>
+			<button type="button" onclick="pi();">Pi = </button>
+			<p id="p7"></p>
+			<br>
+			<br>
+			<button type="button" onclick="a10mod5();">10 % 5 = </button>
+			<p id="p8"></p>
+			<br>
+			<br>
+			<button type="button" onclick="path();">Pathagorean</button>
+			<p id="p9"></p>
+			<br>
+			<img src="https://archive.cnx.org/resources/6c4959a55d5cca4016d80cbf893ab60948efb183/CNX_Precalc_Figure_05_04_007.jpg" alt="img1">
+			<br>
+			<br>
+			<button type="button" onclick="solve();">solve for angle t.</button>
+			<p id="p10"></p>
+			
+		<center>
+	<!-- Ending Home Link -->
+	<center>
+		<br>
+		<hr>
+		<br>
+		<div>
+			<a href="index.html" style="text-align:center" class="button">HOME</a>
+		</div>
+	</center>
+	<script type="text/javascript">
+				
+				function sq100(){
+					var num1 = "The square root of 100 is: ";
+					num1 += Math.sqrt(100);
+					printToPage("p1", num1);
+				}
+				
+				function sin45(){
+				var num2 = "The sine of a 45 degree angle is: ";
+				num2 += Math.sin(45);		
+printToPage("p2", num2);				
+				}
+
+				function cos45(){
+				var num3 = "The cosine of a 45 degree angle is: ";
+				num3 += Math.cos(45);		
+printToPage("p3", num3);						
+				}
+
+				function tan45(){
+				var num4 = "The tangent of a 45 degree angle is: ";
+				num4 += Math.tan(45);
+printToPage("p4", num4);				
+				}
+				
+				function a4t2(){
+				var num5 = "4  *  2 =  ";
+				num5 += 4 * 2;
+printToPage("p5", num5);				
+				}
+				
+				function a100o100(){
+				var num6 = "100 / 100 = ";
+				num6 += 100 / 100;
+printToPage("p6", num6);				
+				}
+				
+				function pi(){
+				var num7 = "Pi = ";
+				num7 += Math.PI;
+printToPage("p7", num7);				
+				}
+				
+				function a10mod5(){
+				var num8 = "10 % 5 = ";
+				num8 += 10 % 5;
+printToPage("p8", num8);				
+				}
+				
+				function path(){
+				var num9 = "a = 3 b = 4 solve using: (a² + b² = c²).  c = ";
+				var a = 3;
+				var b = 4;
+				num9 += Math.sqrt(Math.pow(a, 2) + Math.pow(b, 2));
+printToPage("p9", num9);				
+				}
+				
+				function solve(){
+				var num10 = "What is t? t = ";
+				var t = (33 / 65);
+				t *= 180;
+				t /= Math.PI;
+				num10 += t;
+printToPage("p10", num10);				
+				}
+				function printToPage(id, item){
+	document.getElementById(id).innerHTML = item;
+}
+			</script>
+	</body>
+</html>
