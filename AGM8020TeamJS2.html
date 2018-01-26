@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+	<title>JS Team Project 2</title>
+	<head>
+		<!-- Anthony Migyanka -->			
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+		<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+		<link rel="stylesheet" href="Other/BasicStyle.css">
+		
+	</head>
+	<body style="background-color: #c1c1c1">
+		<h1>Welcome to my JS Math Page</h1>
+		<br>
+		<center>
+			<br>
+			<hr>
+			<br>
+			<button type="button" onclick="randomName();">Random Name</button>
+			<br>
+			<p id="p1"></p>
+			<br>
+			<br>
+			<button type="button" onclick="randomLastName();">Random Last Name</button>
+			<p id="p2"></p>
+			<br>
+			<br>
+			<button type="button" onclick="randomAge();">Random Age</button>
+			<p id="p3"></p>
+			<br>
+			<br>
+			<button type="button" onclick="randomHairColor();">Random Hair Color</button>
+			<p id="p4"></p>
+			<br>
+			<br>
+			<button type="button" onmousedown="thanks(1);">Click Me</button>
+			<p id="p5"></p>
+			<br>
+			<br>
+			<button type="button" ondblclick="thanks(2);">Double Click Me</button>
+			<p id="p6"></p>
+			<br>
+			<br>
+			<button type="button" onkeydown="thanks(3);">Press a Key over this Button</button>
+			<p id="p7"></p>
+			<br>
+			<br>
+			<button type="button" onkeyup="thanks(4);">Lift up a key over this button</button>
+			<p id="p8"></p>
+			<br>
+			<br>
+			<p id="p9" type="button" oncopy="thanks(5);">Hi, copy this text!</p>
+			<br>
+			<br>
+			<button type="button" onwheel="thanks(6);">Scroll up or down over this</button>
+			<p id="p10"></p>
+			<br>
+			<br>
+			<br>
+			<br>
+			<br>
+			<br>
+			<br>
+			<a href="index.html" style="text-align:center" class="button">HOME</a>
+		</center>
+		<script type="text/javascript">
+			//group members
+			var person1 = {firstName:"Anthony", lastName:"Migyanka", age:15, hairColor:"Brown"};
+			var person2 = {firstName:"Ian", lastName:"Miller", age:13, hairColor:"Black"};
+			var person3 = {firstName:"Abdul", lastName:"Mohammed", age:14,  hairColor:"Black"};
+			var person4 = {firstName:"Tristen", lastName:"Moore", age:15,  hairColor:"Brown"};
+			//random people
+			var person5 = {firstName:"John", lastName:"Doe", age:18,  hairColor:"Blond"};
+			var person6 = {firstName:"Valisia", lastName:"Tolbert", age:38, hairColor:"Brown"};
+			var person7 = {firstName:"Zeru", lastName:"Carmilla", age:31,  hairColor:"Black"};
+			var person8 = {firstName:"Sapir", lastName:"Bartalotti", age:25,  hairColor:"Black"};
+			var person9 = {firstName:"Beli", lastName:"Fausti", age:35,  hairColor:"Red"};
+			var person10 = {firstName:"Ludger", lastName:"Wolf", age:13,  hairColor:"Brown"};
+			
+			
+			function randomName(){
+				var item = "";
+				var list = [person1.firstName, person2.firstName, person3.firstName, person4.firstName, person5.firstName, person6.firstName, person7.firstName, person8.firstName, person9.firstName, person10.firstName];
+				item = list[getRandomInt(9)];
+				printToPage("p1", item);
+			}
+			function randomLastName(){
+				var item = "";
+				var list = [person1.lastName, person2.lastName, person3.lastName, person4.lastName, person5.lastName, person6.lastName, person7.lastName, person8.lastName, person9.lastName, person10.lastName];
+				item = list[getRandomInt(9)];
+				printToPage("p2", item);
+			}
+			function randomAge(){
+				var item = "";
+				var list = [person1.age, person2.age, person3.age, person4.age, person5.age, person6.age, person7.age, person8.age, person9.age, person10.age];
+				item = list[getRandomInt(9)];
+				printToPage("p3", item);
+			}
+			function randomHairColor(){
+				var item = "";
+				var list = [person1.hairColor, person2.hairColor, person3.hairColor, person4.hairColor, person5.hairColor, person6.hairColor, person7.hairColor, person8.hairColor, person9.hairColor, person10.hairColor];
+				item = list[getRandomInt(9)];
+				printToPage("p4", item);
+			}
+			function getRandomInt(max) {
+				return Math.floor(Math.random() * Math.floor(max));
+			}
+			function printToPage(id, item){
+				document.getElementById(id).innerHTML = item;
+			}
+			function thanks(num){
+				if(num == 1){
+					printToPage("p5", "Thanks For Clicking");
+				} else if (num == 2){
+					printToPage("p6", "Thanks For Double Clicking");
+				} else if (num == 3){
+					printToPage("p7", "Thanks For Pressing a Key");
+				}else if (num == 4){
+					printToPage("p8", "Thanks For Lifting a Key");
+				}else if (num == 5){
+					printToPage("p9", "Text Copied!");
+				}else if (num == 6){
+					printToPage("p10", "Thanks for Scrolling");
+				}
+				
+			}
+		</script>
+	</body>
+</html>
