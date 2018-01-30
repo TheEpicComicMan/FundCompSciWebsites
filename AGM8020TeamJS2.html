@@ -6,64 +6,123 @@
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 		<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
-		<link rel="stylesheet" href="Other/BasicStyle.css">
+			<style>
+			
+			@keyframes BG {
+				0% {background-color: white}
+				100% {background-color: #4e4e7e}
+			}
+			
+			@-webkit-keyframes BG {
+				0% {background-color: white}
+				100% {background-color: #4e4e7e}
+			}
+			
+			body {
+				animation-name: BG;
+				animation-duration: 2s;
+				animation-fill-mode: forwards;
+				-webkit-animation-name: BG;
+				-webkit-animation-duration: 2s;
+				-webkit-animation-fill-mode: forwards;
+			}
+				
+			p {
+				color: white;
+			}
+			
+			hr.curve {
+				height: 50px;
+				border-style: ridge;
+				border-color: white;
+				border-width: 2px 0 0 0;
+				border-radius: 45px;
+			}
+			
+			<!-- Button Animations -->
+			
+			@keyframes BAM1 {
+				0% {background-color: white}
+				100% {background-color: #4e4e7e}
+			}
+			
+			@-webkit-keyframes BAM1 {
+				0% {background-color: white}
+				100% {background-color: #4e4e7e}
+				
+			.button {
+				border-radius: 4px;
+				background-color: #f4511e;
+				border: none;
+				color: #FFFFFF;
+				text-align: center;
+				font-size: 28px;
+				padding: 20px;
+				width: 200px;
+				transition: all 0.5s;
+				cursor: pointer;
+				margin: 5px;
+			}
+			
+		
+				
+				
+			</style>
+			
 		
 	</head>
-	<body style="background-color: #c1c1c1">
-		<h1>Welcome to my JS Math Page</h1>
+	<body>
+		<h1 style="text-align: center; color: white;">Welcome to my JS Math Page</h1>
 		<br>
 		<center>
 			<br>
-			<hr>
+			<hr class="curve">
 			<br>
-			<button type="button" onclick="randomName();">Random Name</button>
+			<button class="button"  onclick="randomName();">Random Name</button>
 			<br>
 			<p id="p1"></p>
 			<br>
 			<br>
-			<button type="button" onclick="randomLastName();">Random Last Name</button>
+			<button class="button"  onclick="randomLastName();">Random Last Name</button>
 			<p id="p2"></p>
 			<br>
 			<br>
-			<button type="button" onclick="randomAge();">Random Age</button>
+			<button class="button"  onclick="randomAge();">Random Age</button>
 			<p id="p3"></p>
 			<br>
 			<br>
-			<button type="button" onclick="randomHairColor();">Random Hair Color</button>
+			<button class="button"  onclick="randomHairColor();">Random Hair Color</button>
 			<p id="p4"></p>
 			<br>
 			<br>
-			<button type="button" onmousedown="thanks(1);">Click Me</button>
+			<button class="button"  onmousedown="thanks(1);">Click Me</button>
 			<p id="p5"></p>
 			<br>
 			<br>
-			<button type="button" ondblclick="thanks(2);">Double Click Me</button>
+			<button class="button"  ondblclick="thanks(2);">Double Click Me</button>
 			<p id="p6"></p>
 			<br>
 			<br>
-			<button type="button" onkeydown="thanks(3);">Press a Key over this Button</button>
+			<button class="button"  onkeydown="thanks(3);">Press a Key over this Button</button>
 			<p id="p7"></p>
 			<br>
 			<br>
-			<button type="button" onkeyup="thanks(4);">Lift up a key over this button</button>
+			<button class="button"  onkeyup="thanks(4);">Lift up a key over this button</button>
 			<p id="p8"></p>
 			<br>
 			<br>
-			<p id="p9" type="button" oncopy="thanks(5);">Hi, copy this text!</p>
+			<p id="p9"  oncopy="thanks(5);">Hi, copy this text!</p>
 			<br>
 			<br>
-			<button type="button" onwheel="thanks(6);">Scroll up or down over this</button>
+			<button class="button"  onwheel="thanks(6);">Scroll up or down over this</button>
 			<p id="p10"></p>
 			<br>
 			<br>
 			<br>
-			<br>
-			<br>
-			<br>
-			<br>
-			<a href="index.html" style="text-align:center" class="button">HOME</a>
 		</center>
 		<script type="text/javascript">
+			//Main code
+		
 			//group members
 			var person1 = {firstName:"Anthony", lastName:"Migyanka", age:15, hairColor:"Brown"};
 			var person2 = {firstName:"Ian", lastName:"Miller", age:13, hairColor:"Black"};
@@ -125,5 +184,28 @@
 				
 			}
 		</script>
+		
+		<script>
+		//Style Code
+		function ButtonChange(){
+		var elem = document,getElementById('button1')
+		
+			
+		
+		</script>
+		
 	</body>
 </html>
+
+
+<!-- All requirements should be met based on a common theme of your choosing for your site. 
+The site must be visually appealing and incorporate the HTML and CSS attributes you have already learned.
+Create at least 10 objects.
+Each created object must include at least 3 properties each.
+Create at least  3 different methods for your objects.
+Utilize each of your created methods in multiple locations…(at least 6 places...3X2=6)
+Create AND use at least 3 global scope variables and at least 3 local scope variables.
+Incorporate at least 10 different events. 
+The 10 events must be made up of at least 6 different event types….for examples see https://www.w3schools.com/jsref/dom_obj_event.asp
+Remember to incorporate the feedback you received from your last presentation.
+ For example: variable, method/function names should be descriptive of what they are used for. -->
