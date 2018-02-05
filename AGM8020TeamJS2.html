@@ -7,76 +7,49 @@
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 		<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
 			<style>
-			
-			@keyframes BG {
-				0% {background-color: white}
-				100% {background-color: #4e4e7e}
-			}
-			
-			@-webkit-keyframes BG {
-				0% {background-color: white}
-				100% {background-color: #4e4e7e}
-			}
-			
-			body {
-				animation-name: BG;
-				animation-duration: 2s;
-				animation-fill-mode: forwards;
-				-webkit-animation-name: BG;
-				-webkit-animation-duration: 2s;
-				-webkit-animation-fill-mode: forwards;
-			}
-				
-			p {
-				color: white;
-			}
-			
-			hr.curve {
-				height: 50px;
-				border-style: ridge;
-				border-color: white;
-				border-width: 2px 0 0 0;
-				border-radius: 45px;
-			}
-			
-			<!-- Button Animations -->
-			
-			@keyframes BAM1 {
-				0% {background-color: white}
-				100% {background-color: #4e4e7e}
-			}
-			
-			@-webkit-keyframes BAM1 {
-				0% {background-color: white}
-				100% {background-color: #4e4e7e}
-				
-			.button {
-				border-radius: 4px;
-				background-color: #f4511e;
-				border: none;
-				color: #FFFFFF;
-				text-align: center;
-				font-size: 28px;
-				padding: 20px;
-				width: 200px;
-				transition: all 0.5s;
-				cursor: pointer;
-				margin: 5px;
-			}
-			
-		
-				
-				
+				@keyframes BG {
+					0% {background-color: white}
+					100% {background-color: #4286f4}
+				}
+				@-webkit-keyframes BG {
+					0% {background-color: white}
+					100% {background-color: #4286f4}
+				}
+				body {
+					animation-name: BG;
+					animation-duration: 2s;
+					animation-fill-mode: forwards;
+					-webkit-animation-name: BG;
+					-webkit-animation-duration: 2s;
+					-webkit-animation-fill-mode: forwards;
+				}
+				p {
+					color: white;
+				}
+				.scaledImage{
+					width: 200px;
+					height: auto;
+					float: left;
+				}
+				.scaledImage1{
+					width: 200px;
+					height: auto;
+					float: right;
+					
+				}
 			</style>
-			
-		
 	</head>
 	<body>
+	<img class = "scaledImage"  onmouseover= "resize(1);" src="https://media.istockphoto.com/photos/group-of-school-kids-and-teacher-in-classroom-picture-id499343530?k=6&m=499343530&s=612x612&w=0&h=Pe0kaFwLqQNSasgyDY5MikoZx3bUSuknWrXqEbif1kk="></img>
+		<img class = "scaledImage1" onmouseover= "resize(2);"src="https://media.istockphoto.com/photos/group-of-school-kids-and-teacher-in-classroom-picture-id499343530?k=6&m=499343530&s=612x612&w=0&h=Pe0kaFwLqQNSasgyDY5MikoZx3bUSuknWrXqEbif1kk="></img>
+		
 		<h1 style="text-align: center; color: white;">Welcome to the Second Team Project</h1>
+		
 		<br>
 		<center>
+		<p>We (the school) needs a class of people that had signed up. Too many people signed up so the school will need to randomly (lottery draw) for who gets into the class.</p>
 			<br>
-			<hr class="curve">
+			<hr>
 			<br>
 			<button class="button"  onclick="randomName();">Random Name</button>
 			<br>
@@ -94,6 +67,13 @@
 			<button class="button"  onclick="randomHairColor();">Random Hair Color</button>
 			<p id="p4"></p>
 			<br>
+			<br>
+			<button class="button"  onclick="randomFullPerson();">Full Person</button>
+			<p id="p11"></p>
+			<br>
+			<hr>
+			<p>---------- Other Events ----------</p>
+			<hr>
 			<br>
 			<button class="button"  onmousedown="thanks(1);">Click Me</button>
 			<p id="p5"></p>
@@ -124,17 +104,87 @@
 			//Main code
 		
 			//group members
-			var person1 = {firstName:"Anthony", lastName:"Migyanka", age:15, hairColor:"Brown"};
-			var person2 = {firstName:"Ian", lastName:"Miller", age:13, hairColor:"Black"};
-			var person3 = {firstName:"Abdul", lastName:"Mohammed", age:14,  hairColor:"Black"};
-			var person4 = {firstName:"Tristen", lastName:"Moore", age:15,  hairColor:"Brown"};
+			var person1 = {
+			firstName:"Anthony", 
+			lastName:"Migyanka", 
+			age:15, 
+			hairColor:"Brown", 
+			full: function () {
+				return this.firstName + " " + this.lastName +  " - Age: " + this.age + " - Hair Color: " + this.hairColor;
+			}
+			};
+			
+			var person2 = {
+			firstName:"Ian", 
+			lastName:"Miller", 
+			age:13, 
+			hairColor:"Black", 
+			full: function (){return this.firstName + " " + this.lastName +  " - Age: " + this.age + " - Hair Color: " + this.hairColor;}
+			};
+			
+			var person3 = {
+			firstName:"Abdul",
+			lastName:"Mohammed",
+			age:14,  
+			hairColor:"Black", 
+			full: function (){return this.firstName + " " + this.lastName +  " - Age: " + this.age + " - Hair Color: " + this.hairColor;}
+			};
+			
+			var person4 = {
+			firstName:"Tristen", 
+			lastName:"Moore", 
+			age:15,  
+			hairColor:"Brown", 
+			full: function (){return this.firstName + " " + this.lastName +  " - Age: " + this.age + " - Hair Color: " + this.hairColor;}
+			};
 			//random people
-			var person5 = {firstName:"John", lastName:"Doe", age:18,  hairColor:"Blond"};
-			var person6 = {firstName:"Valisia", lastName:"Tolbert", age:38, hairColor:"Brown"};
-			var person7 = {firstName:"Zeru", lastName:"Carmilla", age:31,  hairColor:"Black"};
-			var person8 = {firstName:"Sapir", lastName:"Bartalotti", age:25,  hairColor:"Black"};
-			var person9 = {firstName:"Beli", lastName:"Fausti", age:35,  hairColor:"Red"};
-			var person10 = {firstName:"Ludger", lastName:"Wolf", age:13,  hairColor:"Brown"};
+			var person5 = {
+			firstName:"John", 
+			lastName:"Doe", 
+			age:18,  
+			hairColor:"Blond", 
+			full: function (){return this.firstName + " " + this.lastName +  " - Age: " + this.age + " - Hair Color: " + this.hairColor;}
+			};
+			
+			var person6 = {
+			firstName:"Valisia", 
+			lastName:"Tolbert", 
+			age:38, 
+			hairColor:"Brown", 
+			full: function (){return this.firstName + " " + this.lastName +  " - Age: " + this.age + " - Hair Color: " + this.hairColor;}
+			};
+			
+			var person7 = {
+			firstName:"Zeru", 
+			lastName:"Carmilla", 
+			age:31,  
+			hairColor:"Black", 
+			full: function (){return this.firstName + " " + this.lastName +  " - Age: " + this.age + " - Hair Color: " + this.hairColor;}
+			};
+			
+			var person8 = {
+			firstName:"Sapir", 
+			lastName:"Bartalotti", 
+			age:25, 
+			hairColor:"Black", 
+			full: function (){return this.firstName + " " + this.lastName +  " - Age: " + this.age + " - Hair Color: " + this.hairColor;}
+			};
+			
+			var person9 = {
+			firstName:"Beli", 
+			lastName:"Fausti", 
+			age:35, 
+			hairColor:"Red", 
+			full: function (){return this.firstName + " " + this.lastName +  " - Age: " + this.age + " - Hair Color: " + this.hairColor;}
+			};
+			
+			var person10 = {
+			firstName:"Ludger", 
+			lastName:"Wolf", 
+			age:13,  
+			hairColor:"Brown", 
+			full: function (){return this.firstName + " " + this.lastName +  " - Age: " + this.age + " - Hair Color: " + this.hairColor;}
+			};
 			
 			
 			function randomName(){
@@ -161,6 +211,12 @@
 				item = list[getRandomInt(9)];
 				printToPage("p4", item);
 			}
+			function randomFullPerson(){
+				var item = "";
+				var list = [person1.full(), person2.full(), person3.full(), person4.full(), person5.full(), person6.full(), person7.full(), person8.full(), person9.full(), person10.full()];
+				item = list[getRandomInt(9)];
+				printToPage("p11", item);
+			}
 			function getRandomInt(max) {
 				return Math.floor(Math.random() * Math.floor(max));
 			}
@@ -183,29 +239,18 @@
 				}
 				
 			}
+			function resize(imgId){
+			console.log("HERE");
+			if(imgId == 1){
+				ingId = "scaledImage";
+			} else {
+				imgId = "scaledImage1";
+			}
+			  var img = document.getElementById(imgId);
+			  var w = img.style.width, h = img.style.height;
+			  w /= 2; h /= 2;
+			  img.style.width = w; img.style.height = h;
+			}
 		</script>
-		
-		<script>
-		//Style Code
-		function ButtonChange(){
-		var elem = document,getElementById('button1')
-		
-			
-		
-		</script>
-		
 	</body>
 </html>
-
-
-<!-- All requirements should be met based on a common theme of your choosing for your site. 
-The site must be visually appealing and incorporate the HTML and CSS attributes you have already learned.
-Create at least 10 objects.
-Each created object must include at least 3 properties each.
-Create at least  3 different methods for your objects.
-Utilize each of your created methods in multiple locations…(at least 6 places...3X2=6)
-Create AND use at least 3 global scope variables and at least 3 local scope variables.
-Incorporate at least 10 different events. 
-The 10 events must be made up of at least 6 different event types….for examples see https://www.w3schools.com/jsref/dom_obj_event.asp
-Remember to incorporate the feedback you received from your last presentation.
- For example: variable, method/function names should be descriptive of what they are used for. -->
