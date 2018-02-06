@@ -240,16 +240,18 @@
 				
 			}
 			function resize(imgId){
-			console.log("HERE");
-			if(imgId == 1){
-				ingId = "scaledImage";
-			} else {
-				imgId = "scaledImage1";
-			}
-			  var img = document.getElementById(imgId);
-			  var w = img.style.width, h = img.style.height;
-			  w /= 2; h /= 2;
-			  img.style.width = w; img.style.height = h;
+			var yourImg;
+				if(imgId == 1){
+					yourImg = document.getElementById('scaledImage');
+					console.log("1");
+				} else {
+					yourImg = document.getElementById('scaledImage1');
+					console.log("2");
+				}
+				console.log(yourImg);
+				yourImg.style.height = yourImg.style.height + 10;
+				yourImg.style.width = yourImg.style.width + 10;
+				
 			}
 		</script>
 	</body>
