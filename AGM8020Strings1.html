@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+	<title>String Lab</title>
+	<head>
+		<!-- Anthony Migyanka -->			
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+		<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+			<style>
+				@keyframes BG {
+					0% {background-color: white}
+					100% {background-color: #4286f4}
+				}
+				@-webkit-keyframes BG {
+					0% {background-color: white}
+					100% {background-color: #4286f4}
+				}
+				body {
+					animation-name: BG;
+					animation-duration: 2s;
+					animation-fill-mode: forwards;
+					-webkit-animation-name: BG;
+					-webkit-animation-duration: 2s;
+					-webkit-animation-fill-mode: forwards;
+				}
+				p {
+					color: white;
+				}
+				.scaledImage{
+					width: 200px;
+					height: auto;
+					float: left;
+				}
+				.scaledImage1{
+					width: 200px;
+					height: auto;
+					float: right;
+					
+				}
+			</style>
+	</head>
+	<body>
+		<center>
+			<h1 style="color: white;">String Lab</h1>
+			<br>
+			<hr>
+			<br>
+			<p id="p1"></p>
+			<br>
+			<br>
+			<p id="p2"></p>
+			<br>
+			<br>
+			<p id="p3"></p>
+			<br>
+			<br>
+			<p id="p4"></p>
+			<br>
+			<br>
+			<p id="p5"></p>
+			<br>
+			<br>
+		</center>
+		<script type="text/javascript">
+			
+			var string1 = "Hi";
+			var string2 = "Anthony";
+			var string3 = "Hola";
+			var string4 = "Migyanka";
+			var string5 = "Hello";
+			var string6 = "Generic Text";
+			var string7 = new String("Migyanka");
+			var string8 = new String("Civil");
+			var string9 = new String("A!r");
+			var string10 = new String("Patr0l");
+			
+			var item1 = string1.length;
+			var item2 = string7.length;
+			
+			printToPage("p1", item1);
+			printToPage("p2", item2);
+			
+			var com1 =  string4 == string7;
+			var com2 = string1 ===string5;
+			var com3 = string6 === string8;
+			
+			printToPage("p3", com1);
+			printToPage("p4", com2);
+			printToPage("p5", com3);
+			
+			
+			function printToPage(id, item){
+				document.getElementById(id).innerHTML = item;
+			}
+		</script>
+	</body>
+</html>
