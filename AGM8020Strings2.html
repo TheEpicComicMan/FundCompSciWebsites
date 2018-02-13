@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html>
+	<title id="title"></title>
+	<head>
+		<!-- Anthony Migyanka -->			
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+		<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+		<script src="Other/functions.js"></script>
+			<style>
+				@keyframes BG {
+					0% {background-color: white}
+					100% {background-color: #4286f4}
+				}
+				@-webkit-keyframes BG {
+					0% {background-color: white}
+					100% {background-color: #4286f4}
+				}
+				body {
+					animation-name: BG;
+					animation-duration: 2s;
+					animation-fill-mode: forwards;
+					-webkit-animation-name: BG;
+					-webkit-animation-duration: 2s;
+					-webkit-animation-fill-mode: forwards;
+				}
+				p {
+					color: white;
+				}
+				.scaledImage{
+					width: 200px;
+					height: auto;
+					float: left;
+				}
+				.scaledImage1{
+					width: 200px;
+					height: auto;
+					float: right;
+					
+				}
+			</style>
+	</head>
+	<body>
+		<center>
+			<h1 style="color: white;" id="header"></h1>
+			<br>
+			<hr>
+			<br>
+			<p id="p1"></p>
+			<br>
+			<br>
+			<p id="p2"></p>
+			<br>
+			<br>
+			<p id="p3"></p>
+			<br>
+			<br>
+			<p id="p4"></p>
+			<br>
+			<br>
+			<p id="p5"></p>
+			<br>
+			<br>
+			<p id="p6"></p>
+			<br>
+			<br>
+			<p id="p7"></p>
+			<br>
+			<br>
+			<p id="p8"></p>
+			<br>
+			<br>
+			<p id="p9"></p>
+			<br>
+			<br>
+			<p id="p10"></p>
+			<br>
+			<br>
+			<p id="p11"></p>
+			<br>
+			<br>
+			<p id="p12"></p>
+			<br>
+			<br>
+			<p id="p13"></p>
+			<br>
+			<br>
+			<p id="p14"></p>
+			<br>
+			<br>
+			<p id="p15"></p>
+			<br>
+			<br>
+			<p id="p16"></p>
+			<br>
+			<br>
+			<p id="p17"></p>
+			<br>
+			<br>
+			<p id="p18"></p>
+			<br>
+			<br>
+			<p id="p19"></p>
+			<br>
+			<br>
+			<p id="p20"></p>
+			<br>
+			<br>
+			<p id="p21"></p>
+			<br>
+			<br>
+			<p id="p22"></p>
+			<br>
+			<br>
+			<p id="p23"></p>
+			<br>
+			<br>
+			<p id="p24"></p>
+			<br>
+			<br>
+		</center>
+		 <!-- onload script -->
+		<script>
+		window.onload = function(){
+			var documentTitle = "JS Strings Lab 2";
+			printToPage("title", documentTitle);
+			printToPage("header", documentTitle);
+		}
+		</script>
+		<script type="text/javascript">
+			
+			var string1 = "Hi";
+			var string2 = prompt("Enter your first name: ");
+			var string3 = "Hola";
+			var string4 = prompt("Enter your last name: ");
+			var string5 = "Hello";
+			var string6 = prompt("Enter some text: ");
+			var string7 = "Migyanka"
+			var string8 = "Civil"
+			var string9 = "Air"
+			var string10 = "Patrol"
+			var string11 = "Hi";
+			var string12 = "Anthony";
+			var string13 = "Hola";
+			var string14 = "Migyanka";
+			var string15 = "Hello";
+			var string16 = "Generic Text";
+			var string17 = "Migyanka"
+			var string18 = "Civil"
+			var string19 = "Air"
+			var string20 = "Patrol"
+			
+			var items = ["", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", ""];
+			
+			//charAt()
+			items[0] = string5.charAt(3);
+			items[1] = string6.charAt(0);
+			
+			//toLowerCase()
+			items[2] = string16.toLowerCase();
+			items[3] = string17.toLowerCase();
+			
+			//toUpperCase()
+			items[4] = string7.toUpperCase();
+			items[5] = string18.toUpperCase();
+			
+			//.length
+			items[6] = string2.length;
+			items[7] = string4.length;
+			
+			//.indexOf()
+			items[8] = string11.indexOf('H');
+			items[9] = string12.indexOf('h');
+			
+			//.lastIndexOf()
+			items[10] = string19.lastIndexOf('r');
+			items[11] = string20.lastIndexOf('o');
+			
+			//search()
+			items[12] = string14.search('y');
+			items[13] = string15.search('o');
+			
+			//substr
+			items[14] = string10.substr(-2);
+			items[15] = string13.substr(-2);
+			
+			//replace
+			items[16] = string9.replace('i', '!');
+			items[17] = string8.replace('i', '!');
+			
+			//slice
+			//slice() with one positive parameter
+			items[18] = string1.slice(1);
+			//slice() with two positive parameters
+			items[19] = string3.slice(2, 3);
+			//slice() with one negative parameter
+			items[20] = string1.slice(-1);
+			//slice() with two negative parameters
+			items[21] = string3.slice(-3, -1);
+			
+			//substring
+			//substring() with one positive parameter
+			items[22] = string14.substring(5);
+			//substring() with two positive parameters
+			items[23] = string14.substring(3, 5);
+			
+			//only job above here is to fill this array, the rest will be done
+			
+			for(var i = 0; i < items.length; i++){
+				var id = "p" + (i + 1);
+				printToPage(id, items[i]);
+			}
+		</script>
+	</body>
+</html>
